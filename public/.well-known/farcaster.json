@@ -1,27 +1,27 @@
 {
-    "miniapp": {
-      "version": "1",
-      "name": "BrainFlip",
-      "iconUrl": "https://brainflip-game.vercel.app/icon.png",
-      "homeUrl": "https://brainflip-game.vercel.app/",
-      "splashImageUrl": "https://brainflip-game.vercel.app/icon.png",
-      "splashBackgroundColor": "#ffffff",
-      "subtitle": "Learn faster, remember longer",
-      "description": "BrainFlip helps you master knowledge with flashcards powered by AI memory science.",
-      "primaryCategory": "education",
-      "tags": ["learning", "flashcards", "memory", "education"],
-      "imageUrl": "https://brainflip-game.vercel.app/og-image.png",
-      "buttonTitle": "Open BrainFlip",
-      "requiredChains": ["eip155:8453"],
-      "requiredCapabilities": [
-        "actions.signIn",
-        "wallet.getEthereumProvider",
-        "actions.sendToken"
-      ]
-    },
-    "accountAssociation": {
-      "header": "eyJmaWQiOjExMzUyNDgsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgyNTFDMmNGNDlCNjJCOTE3Y2ZFRkJjMWUzM2ZBY2FEMmIyMjgzQWM4In0",
-      "payload": "eyJkb21haW4iOiJtaW5pYXBwLmJyYWluZmxpcC54eXoifQ",
-      "signature": "MHhkYWNhODNkNzBhMzFiY2NlMzU0ZmZjNDg1YTA4NDE5NzdiMDNmODkzNWNhYzIwMmU1YWVlNjViZTA1YTFmYjU4NmY0OTU0YzM1NGI2MWU1MWI5YmQ2ZjQ4ZjBiNDMzYzc0YmZkMmI3OWM4OTEwOGQyYWM3ZjkwYzRkOTM0NzVhNDFi"
-    }
-  }  
+  "miniapp": {
+    "version": "1",
+    "name": "BrainFlip",
+    "iconUrl": "https://brainflip-game.vercel.app/icon.png",
+    "homeUrl": "https://brainflip-game.vercel.app/",
+    "splashImageUrl": "https://brainflip-game.vercel.app/icon.png",
+    "splashBackgroundColor": "#ffffff",
+    "subtitle": "Learn faster, remember longer",
+    "description": "BrainFlip helps you master knowledge with flashcards powered by AI memory science.",
+    "primaryCategory": "education",
+    "tags": ["learning", "flashcards", "memory", "education"],
+    "imageUrl": "https://brainflip-game.vercel.app/og-image.png",
+    "buttonTitle": "Open BrainFlip",
+    "requiredChains": ["eip155:8453"],
+    "requiredCapabilities": [
+      "actions.signIn",
+      "wallet.getEthereumProvider",
+      "actions.sendToken"
+    ]
+  },
+  "accountAssociation": {
+    "header": "eyJmaWQiOjExMzUyNDgsInR5cGUiOiJhdXRoIiwia2V5IjoiMHhDZWM3ZjIyMzY2NmU0N2JEOGIxQmVDYUFGODU5MTZFQkZFZmVjZTk0In0",
+    "payload": "eyJkb21haW4iOiJicmFpbmZsaXAtZ2FtZS52ZXJjZWwuYXBwIn0",
+    "signature": "K9Tz4UYn0xH5EWj8aoUxLdr+md0hO51XJN9qNXg/ZZkoumw75MwLUwBGWQd9zrPIIh2ijDX2snLPqqKJ0iD4rhs="
+  }
+}
