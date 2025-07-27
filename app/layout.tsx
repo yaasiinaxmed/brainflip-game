@@ -30,14 +30,14 @@ html {
           name="fc:miniapp"
           content='{
             "version": "1",
-            "imageUrl": "https://brainflip.vercel.app/og-image",
+            "imageUrl": "https://brainflip-game.vercel.app/og-image",
             "button": {
               "title": "🚩 Start",
               "action": {
                 "type": "launch_miniapp",
                 "name": "BrainFlip",
-                "url": "https://brainflip.vercel.app/",
-                "splashImageUrl": "https://brainflip.vercel.app/icon.png",
+                "url": "https://brainflip-game.vercel.app/",
+                "splashImageUrl": "https://brainflip-game.vercel.app/icon.png",
                 "splashBackgroundColor": "#000000"
               }
             }
@@ -47,13 +47,13 @@ html {
           name="fc:frame"
           content='{
             "version": "1",
-            "imageUrl": "https://brainflip.vercel.app//og-image",
+            "imageUrl": "https://brainflip-game.vercel.app//og-image",
             "button": {
               "title": "🚩 Start",
               "action": {
                 "type": "launch_frame",
                 "name": "BrainFlip",
-                "url": "https://brainflip.vercel.app/",
+                "url": "https://brainflip-game.vercel.app/",
                 "splashImageUrl": "https://brainflip.vercel.app/icon.png",
                 "splashBackgroundColor": "#000000"
               }
