@@ -18,7 +18,7 @@ interface GameGuideDialogProps {
 export default function GameGuideDialog({ isOpen, onStartGame, onOpenChange }: GameGuideDialogProps) {
   return (
     <CustomDialog open={isOpen} onOpenChange={onOpenChange}>
-      <CustomDialogContent className="sm:max-w-[425px] p-6 rounded-lg shadow-xl border-brainflip-500 border-2">
+      <CustomDialogContent className="sm:max-w-[425px] p-6 rounded-lg shadow-xl border-brainflip border-2">
         <CustomDialogHeader>
           <CustomDialogTitle className="text-3xl font-bold text-brainflip-700 mb-2">
             Welcome to BrainFlip! 🧠
@@ -29,7 +29,7 @@ export default function GameGuideDialog({ isOpen, onStartGame, onOpenChange }: G
         </CustomDialogHeader>
         <div className="py-4 text-gray-700 space-y-3">
           <p>
-            <span className="font-semibold text-brainflip-600">Game Rules:</span>
+            <span className="font-semibold text-brainflip">Game Rules:</span>
           </p>
           <ul className="list-disc list-inside space-y-1">
             <li>Match 8 pairs of face-down cards.</li>
@@ -41,7 +41,7 @@ export default function GameGuideDialog({ isOpen, onStartGame, onOpenChange }: G
         </div>
         <CustomButton
           onClick={onStartGame}
-          className="w-full bg-brainflip-500 hover:bg-brainflip-600 text-white text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
+          className="w-full bg-brainflip hover:bg-brainflip text-white text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
         >
           Start Game
         </CustomButton>
