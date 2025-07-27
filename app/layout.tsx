@@ -30,9 +30,9 @@ html {
           name="fc:miniapp"
           content='{
             "version": "1",
-            "imageUrl": "https://brainflip-game.vercel.app/og-image",
+            "imageUrl": "https://brainflip-game.vercel.app/og-image.png",
             "button": {
-              "title": "🚩 Start",
+              "title": "Test your memory",
               "action": {
                 "type": "launch_miniapp",
                 "name": "BrainFlip",
@@ -47,9 +47,9 @@ html {
           name="fc:frame"
           content='{
             "version": "1",
-            "imageUrl": "https://brainflip-game.vercel.app//og-image",
+            "imageUrl": "https://brainflip-game.vercel.app//og-image.png",
             "button": {
-              "title": "🚩 Start",
+              "title": "Test your memory",
               "action": {
                 "type": "launch_frame",
                 "name": "BrainFlip",
