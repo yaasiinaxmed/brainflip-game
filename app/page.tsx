@@ -29,6 +29,7 @@ export default function BrainFlipGame() {
     mode: 'classic',
     theme: 'mixed'
   })
+  const [user, setUser] = useState<any>(null)
   const timerRef = useRef<NodeJS.Timeout | null>(null)
   const lockBoard = useRef(false)
 
@@ -38,6 +39,22 @@ export default function BrainFlipGame() {
     const load = async () => {
       await sdk.actions.ready();
       setIsLoaded(true);
+      
+      // Fetch user info
+      try {
+        const context = await sdk.context
+        if (context?.user?.fid) {
+          const res = await fetch('/api/user-info', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ fid: context.user.fid }),
+          })
+          const data = await res.json()
+          setUser(data)
+        }
+      } catch (err) {
+        console.error('User Fetch Error:', err)
+      }
     };
     if (sdk && !isLoaded) {
       load();
@@ -273,6 +290,7 @@ export default function BrainFlipGame() {
           moveLimit={gameConfig.moveLimit}
           difficulty={gameConfig.difficulty}
           theme={gameConfig.theme}
+          user={user}
         />
       )}
 

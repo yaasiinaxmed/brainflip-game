@@ -2,7 +2,7 @@
 
 import { CustomCard, CustomCardContent } from "@/components/custom-card"
 import type { GameMode } from "@/types/game"
-import { Clock, Target, Trophy } from "lucide-react"
+import { Clock, Target, Trophy, User } from "lucide-react"
 
 interface GameHeaderProps {
   moves: number
@@ -13,6 +13,7 @@ interface GameHeaderProps {
   moveLimit?: number
   difficulty: string
   theme: string
+  user?: any
 }
 
 export default function GameHeader({ 
@@ -23,7 +24,8 @@ export default function GameHeader({
   timeLimit, 
   moveLimit, 
   difficulty, 
-  theme 
+  theme,
+  user
 }: GameHeaderProps) {
   const getModeIcon = () => {
     switch (mode) {
@@ -90,6 +92,31 @@ export default function GameHeader({
               </div>
             </div>
           </div>
+
+          {/* User Info */}
+          {user && (
+            <div className="flex items-center gap-2 sm:gap-3 bg-gray-50 rounded-lg px-2 sm:px-3 py-1 sm:py-2">
+              <User className="w-4 h-4 text-gray-500" />
+              <div className="flex items-center gap-2">
+                <img
+                  src={user.pfp_url}
+                  alt={user.display_name || user.username}
+                  className="w-6 h-6 sm:w-8 sm:h-8 rounded-full"
+                />
+                <div className="hidden sm:block">
+                  <div className="text-xs font-semibold text-gray-700">
+                    {user.display_name || user.username}
+                  </div>
+                  <div className="text-xs text-gray-500">
+                    @{user.username}
+                  </div>
+                </div>
+                <div className="sm:hidden text-xs font-semibold text-gray-700">
+                  {user.display_name || user.username}
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* Stats */}
           <div className="flex flex-row sm:flex-row items-center gap-3 sm:gap-4 md:gap-6">
